@@ -1,0 +1,21 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+I chose Python and Flask for this solution because Python is very widely known for its simplicity, readability and extensive support for libraries, making it ideal for rapid development.  Furthermore, Flask is a lightweight web framework which allows for lots of flexibility and easy configuration compared to more feature heavy frameworks such as Django. 
+
+I was drawn to this simplicty aspect because it makes it so easy to get started with building a REST API without the overhead of predefined structures, which is especially useful for a coding exercise like this one. I also liked the fact that Flask is so flexible because I have complete control how the API is structured. With Python's large selection of libraries I can also expand this API to do a lot of other tasks if need be. 
+
+Some other alternatives to Flask was using Node.js with Express or Django. With Node.js, I liked how it is fast and event driven, however I chose Python over it because of how easily Python can handle data operations like this exercise. Alternatively with Django, I like how it has a lot of built-in features such as authentication, however I preferred Flask's simplicity for this problem. 
+
+2. What are the advantages and disadvantages of your solution?
+
+The advantage of my solution is how easy it is to access the points of each payer and each transaction. Accessing a certain payer's balance at any point takes O(1) time. Furthermore, my 'spend' endpoint has a time complexity of O(n), which is relatively fast. However this may become detrimental if a large number of points is being spent and each transaction needs to be sifted through. 
+
+The disadvantage of my solution is that it would be hard to find specific transactions for a certain payer. For instance, if a new endpoint was introduced where it only deducted 1 payer's balance, it would take a long time to search through each transaction to find a certain payer's points. However this could also be countered in the future by creating another list in the "balance" object that contains the corresponding transactions of that payer. 
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
+One of my favorite projects thus far has been my research at Stony Brook University, where I developed a machine learning model aimed at predicting remission in patients undergoing treatment for depression. This project was both exciting and challenging, as it required me to quickly learn new machine learning concepts while working with a small dataset. The main hurdle was determining how to create a robust predictive model despite the limited amount of data, which pushed me to dive deep into neural networks and Support Vector Machines (SVM).
+
+In this research, I was tasked with building a supervised learning model capable of predicting patient outcomes. To address the challenge of limited data, I implemented a general meta machine learning model, which allowed me to extract meaningful insights from the data and improve the model’s performance. I applied various preprocessing techniques and worked extensively on feature selection to ensure the accuracy of the predictions. As a result, I was able to achieve a 79% accuracy rate in predicting remission, which was a significant accomplishment given the limitations of the dataset.
+
+The project concluded with me presenting my findings to over 100 doctors at the American Statistical Association Conference, which was an incredible opportunity to share my work. Additionally, the research was published in the peer-reviewed journal PLOS One. This experience not only sharpened my technical skills but also taught me the importance of adaptability and continuous learning, especially when facing complex challenges like limited data​
