@@ -7,6 +7,10 @@ This project is a simple Flask-based REST API to manage points allocation and sp
 - **Spend Points:** Spend points, ensuring that the oldest points are spent first, and no payer’s balance goes negative.
 - **Check Balance:** Retrieve the current balance of points for all payers.
 
+## Files
+- **app.py** This is where the actual API endpoints are coded using Flask.
+- **pytest.py** This is where the unit tests for the endpoints are housed
+
 ## Installation
 
 ### Prerequisites
