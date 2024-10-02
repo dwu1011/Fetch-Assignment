@@ -52,22 +52,24 @@ def spend_points():
 
     points_spent = {}
 
+    # Go through each transaction and spend points
     for transaction in sorted_transactions:
         if points_to_spend <= 0:
             break
 
         payer = transaction['payer']
         
+        # Either use up all the payer's points or the points to spend
         if transaction["points"] < 0:
             points_deducted = transaction["points"]
         else:
             points_deducted = min(transaction['points'], points_to_spend)
 
+        # Update the points to spend and the balance
         points_to_spend -= points_deducted
         balances[payer] -= points_deducted
 
-        # Record the spent points
-
+        # Update the points spent
         if payer not in points_spent:
             points_spent[payer] = 0
         
@@ -79,6 +81,7 @@ def spend_points():
 # Route to get the current balance
 @app.route('/balance', methods=['GET'])
 def get_balance():
+    # returns a json of the current balances
     return jsonify(balances), 200
 
 
