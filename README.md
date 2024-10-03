@@ -20,8 +20,8 @@ This project is a simple Flask-based REST API to manage points allocation and sp
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/points-management-api.git
-   cd points-management-api
+   git clone https://github.com/dwu1011/Fetch-Assignment 
+   cd Fetch-Assignment
 2. Create a Virtual Environment (optional)
     ```bash
     python3 -m venv env
